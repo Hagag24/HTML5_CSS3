@@ -1,18 +1,23 @@
+/* تنسيقات عامة */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.8;
     margin: 0;
     padding: 0;
-    background-color: #f3f3f3;
+    background-color: #f9f9f9;
     color: #333;
 }
+
+/* تنسيق العنوان */
 header {
     background: linear-gradient(90deg, #0073e6, #005bb5);
     color: #fff;
-    padding: 20px 20px;
+    padding: 20px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* تنسيق القائمة العلوية */
 nav {
     background: #005bb5;
     color: #fff;
@@ -20,6 +25,7 @@ nav {
     text-align: center;
     font-size: 18px;
 }
+
 nav a {
     color: #fff;
     margin: 0 15px;
@@ -27,46 +33,57 @@ nav a {
     font-weight: bold;
     transition: color 0.3s;
 }
+
 nav a:hover {
     color: #ffd700;
 }
+
+/* تنسيق الأقسام */
 section {
     padding: 30px;
     margin: 20px auto;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
 }
+
 section h2 {
     color: #0073e6;
     border-bottom: 2px solid #ddd;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
-section ul {
+
+/* تنسيق الجداول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #0073e6;
+    color: #fff;
+}
+
+/* تنسيق القوائم */
+ul, ol {
     margin: 10px 0;
     padding-left: 20px;
 }
-section ul li {
-    margin-bottom: 10px;
+
+ul li, ol li {
+    margin-bottom: 5px;
 }
-section p {
-    margin-bottom: 20px;
-    line-height: 1.8;
-}
-.container {
-    max-width: 1200px;
-    margin: auto;
-    overflow: hidden;
-}
-footer {
-    background: #005bb5;
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 14px;
-    margin-top: 20px;
-}
+
+/* تنسيق النماذج */
 form {
     background: #f9f9f9;
     padding: 20px;
@@ -76,19 +93,22 @@ form {
     margin: auto;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 form label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
     color: #005bb5;
 }
-form input[type="text"], form input[type="submit"] {
+
+form input[type="text"], form input[type="email"], form input[type="submit"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 form input[type="submit"] {
     background: #0073e6;
     color: #fff;
@@ -97,10 +117,12 @@ form input[type="submit"] {
     font-size: 16px;
     transition: background 0.3s;
 }
+
 form input[type="submit"]:hover {
     background: #005bb5;
 }
-/* تنسيقات الوسائط */
+
+/* تنسيق الوسائط */
 img {
     width: 50%;
     border-radius: 8px;
@@ -108,22 +130,21 @@ img {
     margin: 20px auto;
     display: block;
 }
-video {
-    width: 50%;
+
+video, audio {
+    width: 100%;
+    margin: 20px auto;
+    display: block;
     border-radius: 8px;
-    margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    display: block;
-
 }
-audio {
-    width: 50%;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 20px auto;
-    display: block;
 
+/* تنسيق الفوتر */
+footer {
+    background: #005bb5;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    margin-top: 20px;
 }
