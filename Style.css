@@ -100,3 +100,30 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     background: #005bb5;
 }
+/* تنسيقات الوسائط */
+img {
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    display: block;
+}
+video {
+    width: 50%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    display: block;
+
+}
+audio {
+    width: 50%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+
+}
